@@ -3,3 +3,4 @@ jupyter
 matplotlib
 skops
 scikit-learn
+ruff
