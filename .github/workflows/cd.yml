@@ -1,7 +1,7 @@
 name: Continuous Deployment
 on:
   workflow_run:
-    workflows: ["Continuous Integration"]
+    workflows: ['Continuous Integration']
     types:
       - completed
 
@@ -15,5 +15,5 @@ jobs:
 
       - name: Deployment To Hugging Face
         env:
-          HF_TOKEN: HF_TOKEN
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: make deploy HF_TOKEN=$HF_TOKEN
