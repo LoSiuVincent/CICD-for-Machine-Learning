@@ -14,7 +14,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OrdinalEncoder, StandardScaler
 from skops import io as sio
 
-drug_df = pd.read_csv('data/drug.csv')
+drug_df = pd.read_csv('Data/drug.csv')
 X = drug_df.drop('Drug', axis=1).values
 y = drug_df.Drug.values
 
